@@ -1,0 +1,22 @@
+# Redirects for Cloudflare Pages, Netlify, etc.
+# https://developers.cloudflare.com/pages/platform/redirects
+
+# Redirect www to non-www (recommended for personal sites)
+# https://www.romanvelicka.com/*  https://romanvelicka.com/:splat  301!
+
+# Or redirect non-www to www (uncomment if you prefer www)
+# https://romanvelicka.com/*  https://www.romanvelicka.com/:splat  301!
+
+# Force HTTPS (usually handled automatically by hosting providers)
+# http://romanvelicka.com/*  https://romanvelicka.com/:splat  301!
+# http://www.romanvelicka.com/*  https://www.romanvelicka.com/:splat  301!
+
+# Custom 404 page (optional - uncomment and create 404.html if needed)
+# /*  /404.html  404
+
+# Redirect old URLs to new ones (examples)
+# /old-page  /  301
+# /cv.pdf  /  302
+
+# SPA-like behavior - useful if you expand to multiple pages later
+# /*  /index.html  200
