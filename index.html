@@ -323,7 +323,7 @@ a:hover{text-decoration:underline}
         <span data-i18n="hero.role">Test Technician</span> <span class="at">@ Wistron</span><br>
         <span data-i18n="hero.role2">směr Network Engineering</span>
       </p>
-      <p class="hero-lead" data-i18n="hero.lead">Testuji a diagnostikuji Microsoft servery v produkčním prostředí – Arista a Mellanox switche, Linux, bash a PowerShell. Doma si stavím vlastní infrastrukturu, protože mě to prostě baví.</p>
+      <p class="hero-lead" data-i18n="hero.lead">Testuji a diagnostikuji Microsoft servery v produkčním prostředí – Cisco, Arista a Mellanox switche, Windows Server, Linux a automatizace v bashi a PowerShellu. Doma si stavím vlastní infrastrukturu, protože mě to baví.</p>
       <div class="hero-cta">
         <a href="#contact" class="btn btn-primary" data-i18n="hero.cta">Kontaktovat</a>
         <a href="#projects" class="btn btn-ghost" data-i18n="hero.cta2">Projekty</a>
@@ -490,6 +490,17 @@ a:hover{text-decoration:underline}
 
       <div class="proj-card reveal">
         <div class="proj-top">
+          <span class="proj-name" data-i18n="proj.p5.name">Automatizace a monitoring</span>
+          <span class="status up" data-i18n="proj.status.running">běží</span>
+        </div>
+        <p data-i18n="proj.p5.desc">Monitoring vlastních zařízení a serverů s automatickými skripty, které řeší běžné chyby bez zásahu. Workflow automatizace přes n8n s napojením na AI nástroje.</p>
+        <div class="tags">
+          <span class="tag">n8n</span><span class="tag">bash</span><span class="tag">PowerShell</span><span class="tag">Monitoring</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="proj-top">
           <span class="proj-name" data-i18n="proj.p4.name">Tento web</span>
           <span class="status up" data-i18n="proj.status.live">live</span>
         </div>
@@ -513,7 +524,7 @@ a:hover{text-decoration:underline}
       <div class="skill-card reveal">
         <h3 data-i18n="skills.c1.title">sítě</h3>
         <ul>
-          <li data-i18n="skills.c1.i1">Arista a Mellanox switche – konfigurace přes CLI</li>
+          <li data-i18n="skills.c1.i1">Cisco, Arista a Mellanox – konfigurace přes CLI</li>
           <li data-i18n="skills.c1.i2">MikroTik RouterOS</li>
           <li data-i18n="skills.c1.i3">Routing &amp; switching, VLAN, subnetting</li>
           <li data-i18n="skills.c1.i4">Troubleshooting sítí</li>
@@ -531,12 +542,12 @@ a:hover{text-decoration:underline}
       </div>
 
       <div class="skill-card reveal">
-        <h3 data-i18n="skills.c3.title">systémy &amp; nástroje</h3>
+        <h3 data-i18n="skills.c3.title">servery &amp; systémy</h3>
         <ul>
-          <li data-i18n="skills.c3.i1">Linux CLI, Windows</li>
-          <li data-i18n="skills.c3.i2">Skriptování – bash, PowerShell</li>
-          <li data-i18n="skills.c3.i3">Docker, základy Pythonu</li>
-          <li data-i18n="skills.c3.i4">Git, technická dokumentace</li>
+          <li data-i18n="skills.c3.i1">Windows Server, Windows 11, Linux (správa, CLI)</li>
+          <li data-i18n="skills.c3.i2">Automatizace – bash, PowerShell, Python</li>
+          <li data-i18n="skills.c3.i3">Docker a kontejnerizace, Git</li>
+          <li data-i18n="skills.c3.i4">Microsoft 365 (ECDL), zálohování a obnova dat</li>
         </ul>
       </div>
 
@@ -588,9 +599,9 @@ a:hover{text-decoration:underline}
     <h2 class="section-title" data-i18n="contact.title">Kontakt</h2>
     <p class="lead reveal" data-i18n="contact.lead">Zajímají mě pozice v oblasti sítí, testování a IT podpory v Brně a okolí. Ozvěte se – rád si poslechnu, co stavíte.</p>
     <div class="contact-grid">
-      <a href="mailto:roman.velicka1@gmail.com" class="contact-card reveal">
+      <a href="mailto:jobs@velickar.cz" class="contact-card reveal">
         <span class="k">email</span>
-        <span class="v">roman.velicka1@gmail.com</span>
+        <span class="v">jobs@velickar.cz</span>
       </a>
       <a href="tel:+420737657407" class="contact-card reveal">
         <span class="k" data-i18n="contact.phone">telefon</span>
@@ -623,7 +634,7 @@ const translations = {
     "nav.about":"O mně","nav.experience":"Zkušenosti","nav.projects":"Projekty","nav.skills":"Dovednosti","nav.contact":"Kontakt",
     "hero.eyebrow":"// test technik · brno",
     "hero.role":"Test Technician","hero.role2":"směr Network Engineering",
-    "hero.lead":"Testuji a diagnostikuji Microsoft servery v produkčním prostředí – Arista a Mellanox switche, Linux, bash a PowerShell. Doma si stavím vlastní infrastrukturu, protože mě to prostě baví.",
+    "hero.lead":"Testuji a diagnostikuji Microsoft servery v produkčním prostředí – Cisco, Arista a Mellanox switche, Windows Server, Linux a automatizace v bashi a PowerShellu. Doma si stavím vlastní infrastrukturu, protože mě to baví.",
     "hero.cta":"Kontaktovat","hero.cta2":"Projekty",
     "about.title":"O mně",
     "about.lead":"Jsem test technik ve výrobě Microsoft serverů v Brně. Denně diagnostikuji hardware i software, konfiguruji Arista a Mellanox switche přes CLI a automatizuji rutinu pomocí bash a PowerShell skriptů.",
@@ -638,7 +649,7 @@ const translations = {
     "exp.w1.company":"Wistron – výroba Microsoft serverů · Brno",
     "exp.w1.items":[
       "Testování a diagnostika nově vyrobených Microsoft serverů v produkčním prostředí",
-      "Konfigurace Arista a Mellanox switchů přes CLI v testovací infrastruktuře",
+      "Konfigurace switchů Cisco, Arista a Mellanox přes CLI v testovací infrastruktuře",
       "Troubleshooting hardwarových a softwarových závad serverů a síťových komponent",
       "Automatizace rutinních úkonů v bash a PowerShell, práce s Dockerem",
       "Flashování firmware, reporting závad a eskalace na test engineering tým"
@@ -657,8 +668,8 @@ const translations = {
     ],
     "exp.w4.title":"IT praxe / stáž",
     "exp.w4.items":[
-      "Konfigurace síťových prvků – routery a switche v enterprise prostředí",
-      "Stínování zkušených administrátorů, práce s dokumentací"
+      "Praxe zaměřená výhradně na technologie Cisco – konfigurace routerů a switchů",
+      "Stínování zkušených administrátorů, práce s technickou dokumentací"
     ],
     "exp.w5.title":"IT Support – zahraniční stáž",
     "exp.w5.items":[
@@ -668,7 +679,7 @@ const translations = {
     "exp.edu.title":"Maturita v oboru IT",
     "exp.edu.school":"Střední průmyslová škola · Frýdek-Místek",
     "exp.edu.items":[
-      "Počítačové sítě (Cisco – routing & switching), Windows Server, Linux",
+      "Počítačové sítě na technologiích Cisco (Cisco akademie, CCNAv7), Windows Server, Linux",
       "Programování (C#), databáze MySQL, PLC a HMI systémy Siemens"
     ],
     "proj.title":"Projekty & homelab",
@@ -681,9 +692,11 @@ const translations = {
     "proj.p3.desc":"Návrh a správa domácí sítě – MikroTik hEX router a cAP ac access point, vlastní subnet, firewall pravidla a DNS filtrování přes Pi-hole.",
     "proj.p4.name":"Tento web",
     "proj.p4.desc":"Self-hosted portfolio – statický web bez frameworků, nasazený přes Cloudflare Pages a zároveň na vlastním Raspberry Pi s Nginx reverse proxy.",
+    "proj.p5.name":"Automatizace a monitoring",
+    "proj.p5.desc":"Monitoring vlastních zařízení a serverů s automatickými skripty, které řeší běžné chyby bez zásahu. Workflow automatizace přes n8n s napojením na AI nástroje.",
     "skills.title":"Technické dovednosti",
     "skills.c1.title":"sítě",
-    "skills.c1.i1":"Arista a Mellanox switche – konfigurace přes CLI",
+    "skills.c1.i1":"Cisco, Arista a Mellanox – konfigurace přes CLI",
     "skills.c1.i2":"MikroTik RouterOS",
     "skills.c1.i3":"Routing & switching, VLAN, subnetting",
     "skills.c1.i4":"Troubleshooting sítí",
@@ -692,11 +705,11 @@ const translations = {
     "skills.c2.i2":"Síťové karty, management kontroléry, PCIe",
     "skills.c2.i3":"Flashování a aktualizace firmware",
     "skills.c2.i4":"Práce dle testovacích plánů, reporting závad",
-    "skills.c3.title":"systémy & nástroje",
-    "skills.c3.i1":"Linux CLI, Windows",
-    "skills.c3.i2":"Skriptování – bash, PowerShell",
-    "skills.c3.i3":"Docker, základy Pythonu",
-    "skills.c3.i4":"Git, technická dokumentace",
+    "skills.c3.title":"servery & systémy",
+    "skills.c3.i1":"Windows Server, Windows 11, Linux (správa, CLI)",
+    "skills.c3.i2":"Automatizace – bash, PowerShell, Python",
+    "skills.c3.i3":"Docker a kontejnerizace, Git",
+    "skills.c3.i4":"Microsoft 365 (ECDL), zálohování a obnova dat",
     "skills.c4.title":"bezpečnost & podpora",
     "skills.c4.i1":"Základy síťové bezpečnosti, firewall pravidla",
     "skills.c4.i2":"VPN – přehled",
@@ -717,7 +730,7 @@ const translations = {
     "nav.about":"About","nav.experience":"Experience","nav.projects":"Projects","nav.skills":"Skills","nav.contact":"Contact",
     "hero.eyebrow":"// test technician · brno, czechia",
     "hero.role":"Test Technician","hero.role2":"heading towards Network Engineering",
-    "hero.lead":"I test and diagnose Microsoft servers in a production environment – Arista and Mellanox switches, Linux, bash and PowerShell. At home I build my own infrastructure, simply because I enjoy it.",
+    "hero.lead":"I test and diagnose Microsoft servers in a production environment – Cisco, Arista and Mellanox switches, Windows Server, Linux and automation in bash and PowerShell. At home I build my own infrastructure, simply because I enjoy it.",
     "hero.cta":"Get in touch","hero.cta2":"Projects",
     "about.title":"About me",
     "about.lead":"I work as a test technician in Microsoft server manufacturing in Brno. Every day I diagnose hardware and software, configure Arista and Mellanox switches via CLI and automate routine work with bash and PowerShell scripts.",
@@ -732,7 +745,7 @@ const translations = {
     "exp.w1.company":"Wistron – Microsoft server manufacturing · Brno",
     "exp.w1.items":[
       "Testing and diagnostics of newly manufactured Microsoft servers in a production environment",
-      "Configuration of Arista and Mellanox switches via CLI within the test infrastructure",
+      "Configuration of Cisco, Arista and Mellanox switches via CLI within the test infrastructure",
       "Troubleshooting hardware and software failures of servers and network components",
       "Automating routine tasks with bash and PowerShell, working with Docker",
       "Firmware flashing, defect reporting and escalation to the test engineering team"
@@ -751,8 +764,8 @@ const translations = {
     ],
     "exp.w4.title":"IT internship",
     "exp.w4.items":[
-      "Configuration of network devices – routers and switches in an enterprise environment",
-      "Shadowing experienced administrators, working with documentation"
+      "Practice focused entirely on Cisco technologies – router and switch configuration",
+      "Shadowing experienced administrators, working with technical documentation"
     ],
     "exp.w5.title":"IT Support – internship abroad",
     "exp.w5.items":[
@@ -762,7 +775,7 @@ const translations = {
     "exp.edu.title":"High School Diploma in IT",
     "exp.edu.school":"Secondary Technical School · Frýdek-Místek",
     "exp.edu.items":[
-      "Computer networks (Cisco – routing & switching), Windows Server, Linux",
+      "Computer networks on Cisco technologies (Cisco Academy, CCNAv7), Windows Server, Linux",
       "Programming (C#), MySQL databases, Siemens PLC and HMI systems"
     ],
     "proj.title":"Projects & homelab",
@@ -775,9 +788,11 @@ const translations = {
     "proj.p3.desc":"Design and administration of a home network – MikroTik hEX router and cAP ac access point, dedicated subnet, firewall rules and DNS filtering via Pi-hole.",
     "proj.p4.name":"This website",
     "proj.p4.desc":"Self-hosted portfolio – a static site with no frameworks, deployed via Cloudflare Pages and also on my own Raspberry Pi behind an Nginx reverse proxy.",
+    "proj.p5.name":"Automation and monitoring",
+    "proj.p5.desc":"Monitoring of my own devices and servers with automated scripts that fix common errors without intervention. Workflow automation via n8n with AI tool integration.",
     "skills.title":"Technical skills",
     "skills.c1.title":"networking",
-    "skills.c1.i1":"Arista and Mellanox switches – CLI configuration",
+    "skills.c1.i1":"Cisco, Arista and Mellanox – CLI configuration",
     "skills.c1.i2":"MikroTik RouterOS",
     "skills.c1.i3":"Routing & switching, VLANs, subnetting",
     "skills.c1.i4":"Network troubleshooting",
@@ -786,11 +801,11 @@ const translations = {
     "skills.c2.i2":"Network cards, management controllers, PCIe",
     "skills.c2.i3":"Firmware flashing and updates",
     "skills.c2.i4":"Working with test plans, defect reporting",
-    "skills.c3.title":"systems & tools",
-    "skills.c3.i1":"Linux CLI, Windows",
-    "skills.c3.i2":"Scripting – bash, PowerShell",
-    "skills.c3.i3":"Docker, Python basics",
-    "skills.c3.i4":"Git, technical documentation",
+    "skills.c3.title":"servers & systems",
+    "skills.c3.i1":"Windows Server, Windows 11, Linux (administration, CLI)",
+    "skills.c3.i2":"Automation – bash, PowerShell, Python",
+    "skills.c3.i3":"Docker and containerization, Git",
+    "skills.c3.i4":"Microsoft 365 (ECDL), backup and data recovery",
     "skills.c4.title":"security & support",
     "skills.c4.i1":"Network security fundamentals, firewall rules",
     "skills.c4.i2":"VPN – overview",
